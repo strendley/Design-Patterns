@@ -22,7 +22,7 @@ namespace Factory
             foreach (IVehicle vehicle in fordDealer.Vehicles)
             {
                 vehicle.Start();
-                if (vehicle.GetType() == typeof(Car))
+                if (vehicle.GetType() == typeof(Car)) //vehicle is Car also acceptable
                 {
                     Car car = (Car)vehicle;
                     car.CarFax();
